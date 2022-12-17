@@ -28,7 +28,7 @@ After Submitting Respones
 
 Response on google sheet
 
-![image](https://user-images.githubusercontent.com/76088075/208238995-0c86545b-55ce-4ed9-a460-3e2a8cecfb11.png)
+![image](https://user-images.githubusercontent.com/76088075/208239268-6218b679-670e-4b6b-8da7-16c5418b0405.png)
 
 
 
