@@ -21,9 +21,13 @@ Google form link : https://docs.google.com/spreadsheets/d/1-z53YTnoaKY6t7E0OKjS4
 
 ![image](https://user-images.githubusercontent.com/76088075/208220035-88fb719a-fd26-4f50-aeb2-af4caa47b8df.png)
 
-
+Response on google sheet
 ![image](https://user-images.githubusercontent.com/76088075/208238919-d9889ca3-3945-442e-b3f1-62d7273641f4.png)
 
+After Submitting Respones
 ![image](https://user-images.githubusercontent.com/76088075/208238995-0c86545b-55ce-4ed9-a460-3e2a8cecfb11.png)
 
+
+Respose on e-mail
+![image](https://user-images.githubusercontent.com/76088075/208239100-bf8f6ff9-2710-445c-bb33-b9edb14fafd7.png)
 
