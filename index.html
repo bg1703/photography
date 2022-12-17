@@ -66,7 +66,7 @@
         <div class="row">
           <div class="col-md-6 col-sm-6">
             <div class="info-left">
-              <img src="img/old-camera.jpeg" class="rounded-circle">
+              <img src="old-camera.jpeg" class="rounded-circle">
             </div>
           </div>
           <div class="col-md-6 col-sm-6">
@@ -93,7 +93,7 @@ Digital photograph restoration uses a variety of image editing techniques to rem
             <div class="info-left">
               <h2>Vintage | Antique</h2>
               <p>Vintage photography is a broad category. It’s not typified by any one technology or technique. It includes every kind of analog photography, from century-old cameras that could live in a museum to cameras that once used Kodachrome and even film cameras from the early 2000s. “Vintage photography is basically utilizing color, black-and-white, or color slide film in an analog camera,” says photographer Jennifer Froula-Weber.</p>
-              <img src="img/old-pics.jpeg" alt="studio-pics" class="img-fluid imgs" id="studio-pics" >
+              <img src="old-pics.jpeg" alt="studio-pics" class="img-fluid imgs" id="studio-pics" >
             </div>
             
           </div>
@@ -101,7 +101,7 @@ Digital photograph restoration uses a variety of image editing techniques to rem
             <div class="info-right">
               <h2>Custom Designs</h2>
               <p>A custom photographer will consult with clients on image selections and making final image choices for purchase of their photographic art. Because you are treated individually so is the final end product, a custom photographer holds a certain degree of pride of having their work displayed in your home and most likely will be more than willing to help you design a custom wall display for your space.   Typically the higher end custom photographer will have a working knowledge of design principles and aesthetics and may even have a trick or two up their sleeves to assist you with wall art displays of your photographic artwork.</p>
-              <img src="img/cam1.jpeg" alt="studio-pics" class="img-fluid imgs">
+              <img src="cam1.jpeg" alt="studio-pics" class="img-fluid imgs">
             </div>
           </div>
         </div>
@@ -147,21 +147,41 @@ Digital photograph restoration uses a variety of image editing techniques to rem
       <div class="container">
         <div class="row">
           <div class="col-md-5 col-sm-5">
-            <form>
-              <div class="form-group">
-                <label>Name: </label>
-                <input class="form-control" type="text" name="" value="" placeholder="Enter Name">
-              </div>
-              <div class="form-group">
-                <label>Email: </label>
-                <input class="form-control" type="text" name="" value="" placeholder="Enter Email">
-              </div>
-              <div class="form-group">
-                <label>Message: </label>
-                <textarea class="form-control" name="" value="" placeholder="Enter Message"></textarea>
-              </div>
-              <button class="btn btn-default">Submit</button>
-            </form>
+            <!-- <form action="https://formsubmit.co/el/confirm/7ecb09ed65a4be7d527ae85cc0817514" method="POST"> -->
+            <form action="https://formspree.io/f/xlekrgew" method="POST">
+              <form name="submit-to-google-sheet">
+                <div class="form-group">
+                  <label>Name: </label>
+                  <input class="form-control" type="text" name="Name" value="" placeholder="Enter Name" required>
+                </div>
+                <div class="form-group">
+                  <label>Email: </label>
+                  <input class="form-control" type="text" name="Email" value="" placeholder="Enter Email" required>
+                </div>
+                <div class="form-group">
+                  <label>Message: </label>
+                  <textarea class="form-control" name="Message" value="" placeholder="Enter Message" required></textarea>
+                </div>
+                <button class="btn btn-default">Submit</button>
+                </form>
+
+              </form>
+            
+              <!-- <div class="form-group"> -->
+                <!-- <label>Name: </label> -->
+                <!-- <input class="form-control" type="text" name="Name" value="" placeholder="Enter Name" required> -->
+              <!-- </div> -->
+              <!-- <div class="form-group"> -->
+                <!-- <label>Email: </label> -->
+                <!-- <input class="form-control" type="text" name="Email" value="" placeholder="Enter Email" required> -->
+              <!-- </div> -->
+              <!-- <div class="form-group"> -->
+                <!-- <label>Message: </label> -->
+                <!-- <textarea class="form-control" name="Message" value="" placeholder="Enter Message" required></textarea> -->
+              <!-- </div> -->
+              <!-- <button class="btn btn-default">Submit</button> -->
+            <!-- </form> -->
+
           </div>
           <div class="col-md-7 col-sm-7">
 
@@ -233,6 +253,18 @@ Digital photograph restoration uses a variety of image editing techniques to rem
         }
       });
     });
+    </script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbz_5cFbSX9v74mgx4hQooeN2S8IEiiG_XNpx6AuUElx-5ZtwbOHRHbJ4R3yVQ18n_im/exec'
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
     </script>
   </body>
 </html>
