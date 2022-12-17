@@ -2,7 +2,7 @@
 # **Title: Photography & Technology**
 
 ## **1. Description**
-
+Photography undergoes extraordinary changes in the early part of the twentieth century. This can be said of every other type of visual representation, however, but unique to photography is the transformed perception of the medium.This website is to provides informatio about various forms of photogrphy.
 
 ## **2. Live link**
 Link: https://bg1703.github.io/photography/
